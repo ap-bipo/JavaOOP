@@ -33,15 +33,12 @@ public class DateTime extends Time {
     @Override
     public void nextHour()
     {
-        int Tmp=ConvSecond();
-        Tmp+=60*60;
-        ConvTime(Tmp);
+        super.nextHour();
         if(super.hour==23)
         {
             super.hour=0;
             day++;
         }
-        
     }
     protected int ConvDay()
     {
